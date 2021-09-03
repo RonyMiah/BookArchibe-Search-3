@@ -1,14 +1,14 @@
+const searchField = document.getElementById('search-input');
+
 const searchBook = () => {
-    const searchField = document.getElementById('search-input');
     const searchText = searchField.value;
     const url = `https://openlibrary.org/search.json?q= ${searchText}`;
     fetch(url)
         .then(res => res.json())
         .then(data => displaySearchResult(data));
 
-    // Input Field Emty 
-    searchField.value = '';
 }
+
 
 
 
@@ -18,6 +18,8 @@ const displaySearchResult = (books) => {
     const searchFound = document.getElementById('search-here');
 
 
+    // Input Field Emty 
+    searchField.value = '';
 
     // Condition  For error Handaling 
     if (books === null || books === undefined || books.numFound === 0) {
@@ -69,12 +71,18 @@ const displaySearchResult = (books) => {
                 </div>
             </div>
         `;
+
         totalBook.appendChild(div);
         mainDisplay.appendChild(totalBook);
+
+
+
     })
+
+
 }
 
-//add event listener to the search button
+//add event listener  Button
 
 document.getElementById('button-search').addEventListener('click', (e) => {
     e.preventDefault();
