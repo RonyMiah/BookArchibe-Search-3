@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome to Book Center</title>
+    <!-- css link Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- external link css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Book Search Area  -->
+    <div class="input-group mb-3 w-50 mx-auto mt-5">
+        <input id="search-input" type="text" class="form-control p-3" placeholder="Whice Book you Want Scrch it "
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn btn-outline-secondary  bg-info text-white ms-1 pe-5 ps-5"
+            type="button" id="button-search">Search </button>
+    </div>
+
+    <!--   Total Search Found Area   -->
+    <h1 id="search-here" class="container mx-auto my-3"></h1>
+
+
+    <!-- Book Search Result  -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+
+    </div>
+
+
+    <!-- Result Show Display  -->
+    <div id="display-here" class="d-flex justify-content-center align-items-center container mx-auto">
+        <h1 class="text-center my-5">Result Will display Here</h1>
+    </div>
+
+
+    <!-- Java script Boot strap Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- external Java script Link -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
