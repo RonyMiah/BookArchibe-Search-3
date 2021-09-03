@@ -52,7 +52,7 @@ const displaySearchResult = (books) => {
 
         const div = document.createElement('div');
         div.classList.add('col');
-        // mainDisplay.innerHTML = '';
+        mainDisplay.innerHTML = '';
         div.innerHTML = `
         <div class="card h-100">
                 <img src="${img}" class="card-img-top" alt="Image Not Found">
@@ -69,7 +69,7 @@ const displaySearchResult = (books) => {
                 </div>
             </div>
         `;
-        searchResult.appendChild(div);
+        totalBook.appendChild(div);
         mainDisplay.appendChild(totalBook);
     })
 }
